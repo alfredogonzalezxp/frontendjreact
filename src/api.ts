@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-  baseURL: 'https://main.d32q5odejmz7f9.amplifyapp.com/api', // URL de tu backend Spring Boot
+  baseURL: 'https://backendapp-1760226657062.azurewebsites.net/api', // URL de tu backend Spring Boot
   headers: {
     'Content-Type': 'application/json',
   },
