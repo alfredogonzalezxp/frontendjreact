@@ -1,7 +1,11 @@
 import axios from 'axios';
 
+// Lee la URL base de la API desde las variables de entorno de Vite.
+// Si no está definida, usa la URL de localhost como fallback para desarrollo.
+const baseURL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api';
+
 const apiClient = axios.create({
-  baseURL: 'https://main.d32q5odejmz7f9.amplifyapp.com/api', // URL de tu backend Spring Boot
+  baseURL: 'http://localhost:5173/api', // URL de tu backend Spring Boot
   headers: {
     'Content-Type': 'application/json',
   },
