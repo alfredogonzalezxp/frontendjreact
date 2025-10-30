@@ -21,6 +21,7 @@ function App() {
 
   const fetchData = useCallback(async () => {
     try {
+      
       const [clientsRes, plansRes] = await Promise.all([api.getClients(), api.getPlans()]);
       setClients(clientsRes.data);
       setPlans(plansRes.data);
@@ -100,7 +101,7 @@ function App() {
     <div className="bg-slate-50 min-h-screen font-sans text-slate-800">
       <header className="bg-white/80 backdrop-blur-lg sticky top-0 z-10 border-b border-slate-200">
         <div className="container mx-auto px-6 py-4">
-          <h1 className="text-2xl font-bold text-slate-900">Panel de Suscripciones</h1>
+          <h1 className="text--2xl font-bold text-slate-900">Panel de Suscripciones</h1>
         </div>
       </header>
 

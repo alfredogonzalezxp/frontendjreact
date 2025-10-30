@@ -24,7 +24,7 @@ const ClientForm = ({ onClientCreated }: ClientFormProps) => {
         <input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email" className="w-full p-2 border rounded-md" />
         <button type="submit" className="w-full bg-green-500 text-white py-2 rounded-md hover:bg-green-600 transition-colors">Crear Cliente</button>
       </form>
-    </div>
+    </div> 
   );
 };
 
